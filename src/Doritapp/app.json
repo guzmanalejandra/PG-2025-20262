@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Doritapp",
+    "slug": "doritapp-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": { "image": "./assets/splash-icon.png", "resizeMode": "contain", "backgroundColor": "#ffffff" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tuorg.doritapp",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Doritapp necesita usar reconocimiento de voz para escuchar tu lectura.",
+        "NSMicrophoneUsageDescription": "Doritapp necesita usar el micrófono para que puedas practicar leyendo en voz alta."
+      }
+    },
+    "android": {
+      "package": "com.tuorg.doritapp",
+      "permissions": ["RECORD_AUDIO"],
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#ffffff" },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": { "favicon": "./assets/favicon.png" },
+    "extra": { "eas": { "projectId": "tu-id-de-proyecto-eas" } }
+  }
+}
